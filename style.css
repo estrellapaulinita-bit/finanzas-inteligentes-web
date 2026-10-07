@@ -1,0 +1,396 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+h1 {
+    color: #ffffff;
+    background-color: #16213e;
+    padding: 30px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+}
+.resumen {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.tarjeta {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+.tarjeta h2 {
+    font-size: 30px;
+    color: #16213e;
+    margin: 10px 0;
+}
+
+.tarjeta p {
+    color: #777;
+    font-size: 15px;
+}
+.control {
+    background-color: white;
+    margin: 0 30px 30px 30px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.control h2 {
+    color: #16213e;
+}
+
+.control input,
+.control select {
+    padding: 12px;
+    margin: 10px 5px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.control button {
+    padding: 12px 20px;
+    background-color: #16213e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.control button:hover {
+    background-color: #294375;
+}
+.titulo-movimientos {
+    margin-top: 35px;
+}
+
+#listaMovimientos {
+    margin-top: 15px;
+}
+
+.movimiento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f6f8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.movimiento-ingreso {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.movimiento-gasto {
+    color: #dc2626;
+    font-weight: bold;
+}
+.movimiento {
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #f4f6f8;
+    font-weight: bold;
+}
+
+.movimiento-ingreso {
+    color: green;
+}
+
+.movimiento-gasto {
+    color: red;
+}
+.calculadora {
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.calculadora h2 {
+    color: #16213e;
+}
+
+.calculadora input {
+    padding: 12px;
+    margin: 10px 5px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.calculadora button {
+    padding: 12px 20px;
+    background-color: #16213e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.calculadora button:hover {
+    background-color: #294375;
+}
+
+#resultadoAhorro {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f6f8;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #16213e;
+}
+.progreso-contenedor {
+    width: 100%;
+    height: 25px;
+    background-color: #e5e7eb;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#barraProgreso {
+    width: 0%;
+    height: 100%;
+    background-color: #16213e;
+    border-radius: 20px;
+    transition: width 0.6s ease;
+}
+
+#porcentajeProgreso {
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 8px;
+}
+#mensajeAhorro {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.consejos {
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.consejos h2 {
+    color: #16213e;
+}
+
+#consejoTexto {
+    background-color: #f4f6f8;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+#botonConsejo {
+    padding: 12px 20px;
+    background-color: #16213e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#botonConsejo:hover {
+    background-color: #294375;
+}
+.progreso-meta-contenedor {
+    width: 100%;
+    height: 25px;
+    background-color: #e5e7eb;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#barraMeta {
+    width: 0%;
+    height: 100%;
+    background-color: #16213e;
+    border-radius: 20px;
+    transition: width 0.6s ease;
+}
+
+#porcentajeMetaTexto {
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 8px;
+}
+@media (max-width: 700px) {
+
+    .resumen {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+   .control,
+.calculadora,
+.consejos {
+    margin: 15px;
+    padding: 20px;
+}
+
+    .control input,
+    .control select,
+    .control button,
+    .calculadora input,
+    .calculadora button {
+        #botonConsejo 
+        width: 100%;
+        box-sizing: border-box;
+        margin: 7px 0;
+    }
+
+    h1 {
+        font-size: 27px;
+        padding: 25px 20px;
+    }
+
+    body > p {
+        padding: 0 20px;
+    }
+
+    .movimiento {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+.tarjeta-meta {
+    background-color: #f4f6f8;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.tarjeta-meta strong {
+    color: #16213e;
+}
+
+.tarjeta-meta p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.barra-meta-individual {
+    width: 100%;
+    height: 18px;
+    background-color: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.barra-meta-individual div {
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.6s ease;
+}
+
+.titulo-mis-metas {
+    color: #16213e;
+    margin-top: 30px;
+}
+.tarjeta-meta button {
+    margin-top: 10px;
+    padding: 9px 15px;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tarjeta-meta button:hover {
+    background-color: #b91c1c;
+}
+.boton-actualizar {
+    background-color: #2563eb !important;
+    margin-right: 10px;
+}
+
+.boton-actualizar:hover {
+    background-color: #1d4ed8 !important;
+}
+
+.boton-eliminar {
+    background-color: #dc2626 !important;
+}
+
+.boton-eliminar:hover {
+    background-color: #b91c1c !important;
+}
+.agregar-ahorro {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.cantidad-agregar {
+    flex: 1;
+    min-width: 150px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.tarjeta-meta .boton-agregar-ahorro {
+    background-color: #16a34a;
+    color: white;
+}
+
+.tarjeta-meta .boton-agregar-ahorro:hover {
+    background-color: #15803d;
+}
+.meta-cumplida {
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 15px;
+    border: 1px solid #86efac;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}

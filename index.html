@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzas Inteligentes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Finanzas Inteligentes</h1>
+
+    <p>
+        Aprende a administrar tu dinero, ahorrar y evitar deudas.
+    </p>
+<div class="resumen">
+
+    <div class="tarjeta">
+        <h3>💵 Ingresos</h3>
+        <h2 id="totalIngresos">$0.00</h2>
+        <p>Dinero recibido</p>
+    </div>
+
+    <div class="tarjeta">
+        <h3>💳 Gastos</h3>
+        <h2 id="totalGastos">$0.00</h2>
+        <p>Dinero gastado</p>
+    </div>
+
+    <div class="tarjeta">
+        <h3>💰 Ahorro</h3>
+        <h2 id="totalAhorro">$0.00</h2>
+        <p>Dinero disponible</p>
+    </div>
+    </div>
+<section class="control">
+    
+
+    <h2>📊 Control de ingresos y gastos</h2>
+
+    <p>Registra tus movimientos para llevar el control de tu dinero.</p>
+
+    <input
+        type="text"
+        id="descripcion"
+        placeholder="Descripción"
+    >
+
+    <input
+        type="number"
+        id="cantidad"
+        placeholder="Cantidad"
+    >
+
+    <select id="tipo">
+        <option value="ingreso">Ingreso</option>
+        <option value="gasto">Gasto</option>
+    </select>
+
+    <button id="botonAgregar">
+        Agregar movimiento
+    </button>
+    <h2 class="titulo-movimientos">Últimos movimientos</h2>
+
+<div id="listaMovimientos">
+    
+</div>
+    <h2 class="titulo-movimientos">Últimos movimientos</h2>
+
+<div id="listaMovimientos">
+    <p id="sinMovimientos">Todavía no hay movimientos registrados.</p>
+</div>
+
+</section>
+<section class="calculadora">
+
+    <h2>🧮 Calculadora de ahorro</h2>
+
+    <p>Descubre cuánto tiempo necesitas para alcanzar tu meta.</p>
+
+    <input
+        type="number"
+        id="metaAhorro"
+        placeholder="¿Cuánto quieres ahorrar?"
+    >
+
+    <input
+        type="number"
+        id="ahorroMensual"
+        placeholder="¿Cuánto ahorrarás al mes?"
+    >
+<input
+    type="number"
+    id="mesesDeseados"
+    placeholder="¿En cuántos meses quieres lograrlo?"
+>
+    <button id="botonCalcular">
+        Calcular
+    </button>
+
+    <p id="resultadoAhorro"></p>
+<div class="progreso-contenedor">
+    <div id="barraProgreso"></div>
+</div>
+
+<p id="porcentajeProgreso"></p>
+<p id="mensajeAhorro"></p>
+</section>
+<section class="consejos">
+
+    <h2>💡 Consejos para ahorrar</h2>
+
+    <p>Descubre pequeños consejos que pueden ayudarte a mejorar tus finanzas.</p>
+
+    <div id="consejoTexto">
+        Presiona el botón para recibir un consejo.
+    </div>
+
+    <button id="botonConsejo">
+        Mostrar consejo
+    </button>
+
+</section>
+<section class="metas">
+
+    <h2>🎯 Metas financieras</h2>
+
+    <p>Crea una meta y descubre cuánto te falta para alcanzarla.</p>
+
+    <input
+        type="text"
+        id="nombreMeta"
+        placeholder="Nombre de la meta"
+    >
+
+    <input
+        type="number"
+        id="cantidadMeta"
+        placeholder="¿Cuánto necesitas?"
+    >
+
+    <input
+        type="number"
+        id="ahorradoMeta"
+        placeholder="¿Cuánto llevas ahorrado?"
+    >
+<input type="number" id="aporteMensualMeta" placeholder="¿Cuánto ahorrarás al mes?">
+    <button id="botonMeta">
+        Crear meta
+    </button>
+
+    <div id="resultadoMeta"></div>
+<div class="progreso-meta-contenedor">
+    <div id="barraMeta"></div>
+</div>
+
+<p id="porcentajeMetaTexto"></p>
+<h3 class="titulo-mis-metas">📋 Mis metas</h3>
+
+<div id="listaMetas">
+    <p id="sinMetas">Todavía no tienes metas guardadas.</p>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+
+</html>
